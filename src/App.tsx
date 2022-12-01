@@ -7,15 +7,15 @@ type PageTitleType = {
     title: string
 }
 
-function App() {
+function App(props: any) {
     return (
         <div>
             <PageTitle title={'This is APP component'}/>
             <PageTitle title={'my ff'}/>
 
-            <Rating value={3}/>
-            <Accordion title={'Menu 1'}/>
-            <Accordion title={'Menu 2'}/>
+            {/*<Rating value={3}/>*/}
+            <Accordion title={'Menu 1'} collapsed={true}/>
+            <Accordion title={'Menu 2'} collapsed={false}/>
 
             <Rating value={0}/>
             <Rating value={1}/>

@@ -2,13 +2,20 @@ import React from "react";
 
 type AccordionType = {
     title: string
+    collapsed: boolean
 }
 
 export function Accordion(props: AccordionType) {
+
+    if (props.collapsed) {
+        return (
+            <AccordionTitle title={props.title}/>
+    )
+    }
     return (
         <>
-            <AccordionTitle title={props.title}/>
-            <AccordionBody />
+        <AccordionTitle title={props.title} />
+        <AccordionBody/>
         </>
     )
 }
