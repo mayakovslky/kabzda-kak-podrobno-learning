@@ -14,14 +14,14 @@ export function Accordion(props: AccordionType) {
 }
 
 type AccordionTitleType = {
-    title: string
+    title: {}
 }
 
 function AccordionTitle(props: AccordionTitleType) {
     return (
         <>
-
-            <h3>{props.title}</h3>
+            {props.title}
+            <h3>Menu</h3>
         </>
     )
 }
