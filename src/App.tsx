@@ -14,8 +14,8 @@ function App() {
             <PageTitle title={'my ff'}/>
 
             <Rating value={3}/>
-            <Accordion title={'menu 1'}/>
-            <Accordion title={'menu 2'}/>
+            <Accordion title={'Menu 1'}/>
+            <Accordion title={'Menu 2'}/>
 
             <Rating value={0}/>
             <Rating value={1}/>

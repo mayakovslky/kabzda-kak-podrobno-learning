@@ -14,7 +14,7 @@ export function Accordion(props: AccordionType) {
 }
 
 type AccordionTitleType = {
-    title: {}
+    title: string
 }
 
 function AccordionTitle(props: AccordionTitleType) {
