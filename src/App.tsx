@@ -1,33 +1,24 @@
 import React from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion";
-import {Rating} from "./components/Rating";
+import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
+import {OnOff} from "./components/OnOff/OnOff";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 
-type PageTitleType = {
-    title: string
-}
-
-function App(props: any) {
+function App() {
     return (
         <div>
-            <PageTitle title={'This is APP component'}/>
-            <PageTitle title={'my ff'} />
 
-            <Accordion title={'Menu 1'} collapsed={true}/>
-            <Accordion title={'Menu 2'} collapsed={false}/>
+            <OnOff />
 
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
+            <UncontrolledAccordion title={'Menu 1'}/>
+            <UncontrolledAccordion title={'Menu 2'}/>
+
+            <UncontrolledRating/>
+            <UncontrolledRating/>
+            <UncontrolledRating/>
+            <UncontrolledRating/>
+            <UncontrolledRating/>
         </div>
-    )
-}
-
-export function PageTitle(props: PageTitleType) {
-    return (
-        <h1>{props.title}</h1>
     )
 }
 
